@@ -12,6 +12,10 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
+      "my-css-book": [
+        "dist/my-css-book/my-css-book",
+        "dist/my-css-book"
+      ],
       "my-html-book": [
         "dist/my-html-book/my-html-book",
         "dist/my-html-book"

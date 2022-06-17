@@ -140,6 +140,37 @@
           }
         }
       }
+    },
+    "my-css-book": {
+      "projectType": "library",
+      "root": "projects/my-css-book",
+      "sourceRoot": "projects/my-css-book/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/my-css-book/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/my-css-book/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/my-css-book/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/my-css-book/src/test.ts",
+            "tsConfig": "projects/my-css-book/tsconfig.spec.json",
+            "karmaConfig": "projects/my-css-book/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "my-play-book"
