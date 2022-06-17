@@ -19,6 +19,10 @@
       "my-html-book": [
         "dist/my-html-book/my-html-book",
         "dist/my-html-book"
+      ],
+      "my-js-book": [
+        "dist/my-js-book/my-js-book",
+        "dist/my-js-book"
       ]
     },
     "declaration": false,
