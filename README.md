@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Required Packages
+
+Run the following command to install ngx-formly with bootstrap theme `npm install @angular/forms @ngx-formly/core @ngx-formly/bootstrap --save`
+For more information click on following link [Formly Getting Started](https://formly.dev/guide/getting-started)
