@@ -1,7 +1,7 @@
 import { MyGuideComponent } from './component/my-guide/my-guide.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BookFrameComponent } from './book-frame/book-frame.component';
+import { BookFrameComponent } from './component/book-frame/book-frame.component';
 
 const routes: Routes = [
   {
