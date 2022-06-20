@@ -7,11 +7,13 @@ import { FormlyModule } from '@ngx-formly/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyGuideComponent } from './component/my-guide/my-guide.component';
+import { BookFrameComponent } from './book-frame/book-frame.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyGuideComponent
+    MyGuideComponent,
+    BookFrameComponent
   ],
   imports: [
     BrowserModule,
