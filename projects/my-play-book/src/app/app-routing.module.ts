@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookFrameComponent } from './component/book-frame/book-frame.component';
 import { BookContentComponent } from './component/book-content/book-content.component';
+import { TopicComponent } from './component/topic/topic.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,11 @@ const routes: Routes = [
         children:[
           {
             path:':bookname',
-            component: BookContentComponent
+            component: BookContentComponent,
+            children:[{
+              path:':topicname',
+              component: TopicComponent,
+            }]
           }
         ]
       }

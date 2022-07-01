@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 
 @Component({
   selector: 'app-book-content',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookContentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:ActivatedRoute) { 
+    console.log(route.params);
+    console.log(route.snapshot.params['bookname']);
+    console.log(route.snapshot.params['topicname']);
+  }
 
   ngOnInit(): void {
   }
