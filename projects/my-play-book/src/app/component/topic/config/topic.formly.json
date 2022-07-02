@@ -1,0 +1,11 @@
+[
+    {
+        "key": "email",
+        "type": "input",
+        "templateOptions": {
+            "label": "Email address test",
+            "placeholder": "Enter email",
+            "required": true
+        }
+    }
+]
