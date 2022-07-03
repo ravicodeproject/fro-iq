@@ -15,6 +15,7 @@ import { FormlyBoardComponent } from './component/playground/formly-board/formly
 import { PlaygroundComponent } from './component/playground/playground.component';
 import { CustomInputComponent } from './formly-field/custom-input/custom-input.component';
 import { CustomInputOneComponent } from './formly-field/custom-input-one/custom-input-one.component';
+import { RepeatSectionComponent } from './formly-field/repeat-section/repeat-section.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CustomInputOneComponent } from './formly-field/custom-input-one/custom-
     FormlyBoardComponent,
     PlaygroundComponent,
     CustomInputComponent,
-    CustomInputOneComponent
+    CustomInputOneComponent,
+    RepeatSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import { CustomInputOneComponent } from './formly-field/custom-input-one/custom-
               label: 'Custom inlined',
             }
           }
-        }
+        },
+        { name: 'repeat', component: RepeatSectionComponent },
       ],
       validators:[],
       validationMessages:[],

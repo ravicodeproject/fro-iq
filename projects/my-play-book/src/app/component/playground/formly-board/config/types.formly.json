@@ -12,14 +12,31 @@
         "key": "custom",
         "type": "custom",
         "templateOptions": {
-          "label": "Custom testing"
+            "label": "Custom testing"
         }
-      },
-      {
-          "key": "custom-one",
-          "type": "custom-one",
-          "templateOptions": {
+    },
+    {
+        "key": "custom-one",
+        "type": "custom-one",
+        "templateOptions": {
             "label": "Custom testing xxxx"
-          }
         }
+    },
+    {
+        "key": "investments",
+        "type": "repeat",
+        "fieldArray": {
+            "fieldGroup": [
+                {
+                    "className": "col-sm-4",
+                    "type": "input",
+                    "key": "investmentName",
+                    "templateOptions": {
+                        "label": "Name of Investment",
+                        "required": true
+                    }
+                }
+            ]
+        }
+    }
 ]
