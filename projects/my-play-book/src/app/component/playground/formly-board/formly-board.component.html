@@ -1,0 +1,14 @@
+<div>
+    <div>
+        <h2>Formly Types</h2>
+        <form [formGroup]="formlyTypesForm" (ngSubmit)="null">
+            <formly-form [form]="formlyTypesForm" [fields]="formlyTypesFields" [model]="model"></formly-form>
+        </form>
+    </div>
+    <div>
+        <h2>Formly Widgets</h2>
+        <form [formGroup]="formlyWidgetForm" (ngSubmit)="null">
+            <formly-form [form]="formlyWidgetForm" [fields]="formlyWidgetFields" [model]="model"></formly-form>
+        </form>
+    </div>
+</div>

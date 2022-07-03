@@ -4,8 +4,30 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookFrameComponent } from './component/book-frame/book-frame.component';
 import { BookContentComponent } from './component/book-content/book-content.component';
 import { TopicComponent } from './component/topic/topic.component';
+import { PlaygroundComponent } from './component/playground/playground.component';
+import { TmplBoardComponent } from './component/playground/tmpl-board/tmpl-board.component';
+import { FormlyBoardComponent } from './component/playground/formly-board/formly-board.component';
 
 const routes: Routes = [
+  {
+    path: 'playground',
+    component: PlaygroundComponent,
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'tmpl',
+      },
+      {
+        path: 'tmpl',
+        component: TmplBoardComponent,
+      },
+      {
+        path: 'formly',
+        component: FormlyBoardComponent,
+      }
+    ],
+  },
   {
     path: '',
     component: MyGuideComponent,

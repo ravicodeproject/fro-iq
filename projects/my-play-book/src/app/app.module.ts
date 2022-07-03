@@ -10,6 +10,9 @@ import { MyGuideComponent } from './component/my-guide/my-guide.component';
 import { BookFrameComponent } from './component/book-frame/book-frame.component';
 import { BookContentComponent } from './component/book-content/book-content.component';
 import { TopicComponent } from './component/topic/topic.component';
+import { TmplBoardComponent } from './component/playground/tmpl-board/tmpl-board.component';
+import { FormlyBoardComponent } from './component/playground/formly-board/formly-board.component';
+import { PlaygroundComponent } from './component/playground/playground.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { TopicComponent } from './component/topic/topic.component';
     MyGuideComponent,
     BookFrameComponent,
     BookContentComponent,
-    TopicComponent
+    TopicComponent,
+    TmplBoardComponent,
+    FormlyBoardComponent,
+    PlaygroundComponent
   ],
   imports: [
     BrowserModule,
