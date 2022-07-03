@@ -7,5 +7,19 @@
             "placeholder": "Enter email",
             "required": true
         }
-    }
+    },
+    {
+        "key": "custom",
+        "type": "custom",
+        "templateOptions": {
+          "label": "Custom testing"
+        }
+      },
+      {
+          "key": "custom-one",
+          "type": "custom-one",
+          "templateOptions": {
+            "label": "Custom testing xxxx"
+          }
+        }
 ]

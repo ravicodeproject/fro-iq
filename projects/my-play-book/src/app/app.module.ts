@@ -13,6 +13,8 @@ import { TopicComponent } from './component/topic/topic.component';
 import { TmplBoardComponent } from './component/playground/tmpl-board/tmpl-board.component';
 import { FormlyBoardComponent } from './component/playground/formly-board/formly-board.component';
 import { PlaygroundComponent } from './component/playground/playground.component';
+import { CustomInputComponent } from './formly-field/custom-input/custom-input.component';
+import { CustomInputOneComponent } from './formly-field/custom-input-one/custom-input-one.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,41 @@ import { PlaygroundComponent } from './component/playground/playground.component
     TopicComponent,
     TmplBoardComponent,
     FormlyBoardComponent,
-    PlaygroundComponent
+    PlaygroundComponent,
+    CustomInputComponent,
+    CustomInputOneComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot(),
+    FormlyModule.forRoot({
+      extensions:[],
+      types:[
+        {
+          name: 'custom',
+          component: CustomInputComponent,
+          wrappers: ['form-field'] ,
+          defaultOptions:{
+            templateOptions:{
+              label: 'Custom inlined',
+            }
+          }
+        },
+        {
+          name: 'custom-one',
+          component: CustomInputOneComponent,
+          defaultOptions:{
+            templateOptions:{
+              label: 'Custom inlined',
+            }
+          }
+        }
+      ],
+      validators:[],
+      validationMessages:[],
+      wrappers:[]
+    }),
     FormlyBootstrapModule
   ],
   providers: [],
