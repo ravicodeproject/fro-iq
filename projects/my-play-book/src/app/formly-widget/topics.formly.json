@@ -1,10 +1,18 @@
 
     {
-        "key": "email",
-        "type": "input",
-        "templateOptions": {
-            "label": "Email address test",
-            "placeholder": "Enter email",
-            "required": true
+        "key": "key_to_be_added",
+        "type": "repeat",
+        "fieldArray": {
+            "fieldGroup": [
+                {
+                    "className": "col-sm-4",
+                    "type": "input",
+                    "key": "investmentName",
+                    "templateOptions": {
+                        "label": "Name of Investment",
+                        "required": true
+                    }
+                }
+            ]
         }
     }

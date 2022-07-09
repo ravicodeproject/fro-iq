@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
-import { default as emailTemplate } from '../formly-widget/topics.formly.json';
+import { default as emailTemplate } from '../formly-widget/email.formly.json';
+import { default as topicTemplate } from '../formly-widget/topics.formly.json';
 
 export enum WidgetName {
-  EMAIL = "email"
+  EMAIL = "email",
+  TOPIC = "topic"
 }
 
 const widgets = {
-  [WidgetName.EMAIL]: emailTemplate
+  [WidgetName.EMAIL]: emailTemplate,
+  [WidgetName.TOPIC]: topicTemplate
 }
 
 /**

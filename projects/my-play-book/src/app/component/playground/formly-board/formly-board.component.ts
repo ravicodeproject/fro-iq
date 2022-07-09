@@ -15,8 +15,16 @@ export class FormlyBoardComponent implements OnInit {
   formlyTypesForm = new FormGroup({});
   formlyWidgetForm = new FormGroup({});
 
-  model = { email: 'email@gmail.com', custom: 'custom value', 'custom-one':'custom one value',investments: [{investmentName:"test1"},{investmentName:"test2"}] };
-
+  model = { 
+    email: 'email@gmail.com', 
+    custom: 'custom value', 
+    'custom-one': 'custom one value', 
+    investments: [
+      { investmentName: "test1" }, 
+      { investmentName: "test2" }
+    ] 
+  };
+  
   formlyTypesFields: FormlyFieldConfig[] = [];
   formlyWidgetFields: FormlyFieldConfig[] = [];
 

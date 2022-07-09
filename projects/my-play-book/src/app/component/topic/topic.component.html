@@ -1,1 +1,3 @@
-<p>topic works!</p>
+<form [formGroup]="formlyWidgetForm" (ngSubmit)="null">
+    <formly-form [form]="formlyWidgetForm" [fields]="formlyWidgetFields" [model]="model"></formly-form>
+</form>
