@@ -7,6 +7,7 @@ import { TopicComponent } from './component/topic/topic.component';
 import { PlaygroundComponent } from './component/playground/playground.component';
 import { TmplBoardComponent } from './component/playground/tmpl-board/tmpl-board.component';
 import { FormlyBoardComponent } from './component/playground/formly-board/formly-board.component';
+import { MyCounterComponent } from './component/my-counter/my-counter.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
         component: FormlyBoardComponent,
       }
     ],
+  },
+  {
+    path:'count',
+    component:MyCounterComponent
   },
   {
     path: '',

@@ -16,6 +16,9 @@ import { PlaygroundComponent } from './component/playground/playground.component
 import { CustomInputComponent } from './formly-field/custom-input/custom-input.component';
 import { CustomInputOneComponent } from './formly-field/custom-input-one/custom-input-one.component';
 import { RepeatSectionComponent } from './formly-field/repeat-section/repeat-section.component';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './store/counter/counter.reducer';
+import { MyCounterComponent } from './component/my-counter/my-counter.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,13 @@ import { RepeatSectionComponent } from './formly-field/repeat-section/repeat-sec
     PlaygroundComponent,
     CustomInputComponent,
     CustomInputOneComponent,
-    RepeatSectionComponent
+    RepeatSectionComponent,
+    MyCounterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule,   
     FormlyModule.forRoot({
       extensions:[],
       types:[
@@ -63,7 +67,8 @@ import { RepeatSectionComponent } from './formly-field/repeat-section/repeat-sec
       validationMessages:[],
       wrappers:[]
     }),
-    FormlyBootstrapModule
+    FormlyBootstrapModule,
+    StoreModule.forRoot({count:counterReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
