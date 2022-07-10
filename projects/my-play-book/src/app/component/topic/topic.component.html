@@ -1,3 +1,8 @@
 <form [formGroup]="formlyWidgetForm" (ngSubmit)="null">
     <formly-form [form]="formlyWidgetForm" [fields]="formlyWidgetFields" [model]="model"></formly-form>
 </form>
+
+<button (click)="get()">get</button>
+<button (click)="post()">post</button>
+<button (click)="put()">put</button>
+<button (click)="delete()">delete</button>
